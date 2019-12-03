@@ -7,7 +7,7 @@ import torch.nn as nn
 # ...
 
 # 定义网络
-class Net(nn.Module):{
+class Net(nn.Module):
     # init 函数中定义网络结构
     def __init__(self):
         super(Net, self).__init__()
@@ -19,7 +19,6 @@ class Net(nn.Module):{
         # ...
         output = F.log_softmax(x, dim=1)
         return output
-}
 
 # 定义训练过程
 def train(args, model, device, train_loader, optimizer, epoch):
